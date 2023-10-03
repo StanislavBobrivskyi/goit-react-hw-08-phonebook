@@ -1,4 +1,4 @@
-import CircularProgress from '@mui/material/CircularProgress';
+import { FallingLines } from 'react-loader-spinner';
 
 export const Loader = () => (
   <div
@@ -8,7 +8,12 @@ export const Loader = () => (
     }}
   >
     <div style={{ marginLeft: 'auto', marginRight: 'auto' }}>
-      <CircularProgress color="success" />
+      <FallingLines
+        color="#4fa94d"
+        width="100"
+        visible={true}
+        ariaLabel="falling-lines-loading"
+      />
     </div>
   </div>
 );
