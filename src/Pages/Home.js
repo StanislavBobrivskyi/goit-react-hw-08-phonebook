@@ -1,26 +1,14 @@
-const styles = {
-  container: {
-    minHeight: 'calc(100vh - 50px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-  },
+import { ContactList } from 'components/ContactsList/ContactsList';
+import { useLocation } from 'react-router-dom';
+
+const Home = () => {
+  const location = useLocation();
+
+  return (
+    <>
+      <ContactList stateItem={{ from: location }} />
+    </>
+  );
 };
 
-export default function Home() {
-  return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>
-        Task manager welcome page{' '}
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
-      </h1>
-    </div>
-  );
-}
+export default Home;
