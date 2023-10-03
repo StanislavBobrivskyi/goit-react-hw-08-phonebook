@@ -1,12 +1,9 @@
 import { ErrorMessage, Field, Formik } from 'formik';
 import { FiUserPlus } from 'react-icons/fi';
 import * as Yup from 'yup';
-import {
-  StyledForm,
-  Wrapper,
-  Button,
-  InputWrapper,
-} from './ContactsForm.styled';
+
+import { Form } from 'formik';
+
 import { PatternFormat } from 'react-number-format';
 import { useDispatch, useSelector } from 'react-redux';
 import { addNewContact } from 'redux/contacts/thunk';
@@ -99,15 +96,15 @@ export const ContactsForm = () => {
   }, [mode]);
 
   return (
-    <Wrapper>
+    <div>
       <Formik
         initialValues={initialValues}
         validationSchema={ContactsSchema}
         onSubmit={handleSubmit}
       >
-        <StyledForm autoComplete="off">
+        <Form autoComplete="off">
           <ThemeProvider theme={theme}>
-            <InputWrapper>
+            <div>
               <PersonOutlineIcon color="secondary" />
               <Field
                 as={TextField}
@@ -117,14 +114,14 @@ export const ContactsForm = () => {
                 variant="standard"
                 className="fieldName"
               />
-            </InputWrapper>
+            </div>
             <ErrorMessage
               name="name"
               component="span"
               style={{ color: 'red' }}
             />
 
-            <InputWrapper>
+            <div>
               <PhoneEnabledIcon color="secondary" />
               <Field
                 as={PatternFormat}
@@ -135,19 +132,19 @@ export const ContactsForm = () => {
                 allowEmptyFormatting={true}
                 mask="_"
               />
-            </InputWrapper>
+            </div>
             <ErrorMessage
               name="number"
               component="span"
               style={{ color: 'red' }}
             />
 
-            <Button type="submit">
+            <button type="submit">
               <FiUserPlus size={26} />
-            </Button>
+            </button>
           </ThemeProvider>
-        </StyledForm>
+        </Form>
       </Formik>
-    </Wrapper>
+    </div>
   );
 };
