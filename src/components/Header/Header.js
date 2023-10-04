@@ -7,9 +7,9 @@ import {
   LogoAndBtnsWrapper,
   StyledUserEmail,
   WrapperTheme,
-  // StyledSwitcher,
+  StyledSwitcher,
 } from './Header.styled';
-// import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { Filter } from 'components/Filter/Filter';
 import { CreateContact } from 'components/CreateContactBtn/CreateContactBtn';
 import { Link } from 'react-router-dom';
@@ -162,6 +162,15 @@ export const Header = () => {
               <Title>Phonebook</Title>
             </Wrapper>
           </Link>
+          <ThemeProvider theme={theme}>
+            <StyledSwitcher
+              control={<MaterialUISwitch sx={{ m: 1 }} />}
+              label=""
+              onClick={handleThemeChange}
+              sx={{ m: 0 }}
+              checked={toggleTheme || currentTheme === 'dark' ? true : false}
+            />
+          </ThemeProvider>
         </WrapperTheme>
         {/* Mob */}
         <LoginBtnsWrapper className="LoginBtnsWrapper">
