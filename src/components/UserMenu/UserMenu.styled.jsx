@@ -13,23 +13,36 @@ export const Wrap = styled.div`
   gap: 10px;
 `;
 export const ContactsLink = styled(Link)`
-  padding: 15px;
+  min-width: 70px;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+  transition: font-size 0.3s, text-decoration 0.3s;
   &:focus,
   &:hover {
-    color: rgb(181, 181, 127);
+    color: rgb(8, 38, 13);
+    font-size: 18px;
+    text-decoration: underline;
   }
 `;
 export const LogOutButton = styled.button`
-  min-width: 80px;
-  background-color: transparent;
-  font-weight: inherit;
-  letter-spacing: inherit;
+  min-width: 70px;
   padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+  transition: font-size 0.3s, text-decoration 0.3s;
   border: none;
-  cursor: pointer;
-  color: #3b3b3b;
+  background-color: transparent;
   &:focus,
   &:hover {
-    color: rgb(181, 181, 127);
+    color: rgb(8, 38, 13);
+    font-size: 18px;
+    text-decoration: underline;
   }
+  font-size: 20px;
+  font-weight: 700;
 `;

@@ -3,12 +3,17 @@ import { FaTrash } from 'react-icons/fa';
 
 export const List = styled.ul`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margine: 0, auto;
+  align-items: center;
+
   gap: 15px;
 `;
 
 export const Item = styled.li`
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   display: flex;
   justify-content: space-between;
   color: black;
@@ -17,26 +22,35 @@ export const Item = styled.li`
 
 export const ContactName = styled.p`
   margin: 0px;
+  color: rgb(8, 38, 13);
 `;
 
 export const DeleteButton = styled.button`
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 15px;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
+  padding: 6px;
+  width: 80%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 33.5px;
+  background: #3cb3ab;
   border: none;
-  outline: none;
+  &:hover {
+    color: #fff;
+    background-color: #147a73;
+    box-shadow: 1px 2px 6px 0px rgba(33, 83, 60, 0.7);
+  }
+  box-shadow: 0 2px 4px rgba(33, 83, 60, 0.5);
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    width: 50px;
+  }
 `;
 
 export const DeleteIcon = styled(FaTrash)`
   width: 20px;
   height: 20px;
-  &:hover,
+  /* &:hover,
   &:focus {
     color: rgb(181, 181, 127);
-  }
+  } */
 `;
