@@ -10,8 +10,8 @@ export const StyledHeader = styled.header`
   align-items: center;
   padding: 15px 30px;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  background-color: beige;
+    0px 4px 5px 0px rgba(24, 49, 29, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #a4f873;
 `;
 
 export const LogoWrap = styled.div`
@@ -20,6 +20,6 @@ export const LogoWrap = styled.div`
 `;
 
 export const LogoText = styled.p`
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 26px;
+  font-weight: 700;
 `;

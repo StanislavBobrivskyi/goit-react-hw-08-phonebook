@@ -13,8 +13,11 @@ export const NavigationLink = styled(NavLink)`
   text-decoration: none;
   font-style: inherit;
   color: inherit;
+  transition: font-size 0.3s, text-decoration 0.3s;
   &:focus,
   &:hover {
-    color: rgb(181, 181, 127);
+    color: rgb(8, 38, 13);
+    font-size: 18px;
+    text-decoration: underline;
   }
 `;
