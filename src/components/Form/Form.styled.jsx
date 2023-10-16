@@ -28,7 +28,7 @@ export const StyledInput = styled.input`
 export const FormButton = styled.button`
   margin-top: 40px;
   padding: 6px;
-  width: 80%;
+  width: 250px;
   height: 100%;
   flex-shrink: 0;
   border-radius: 33.5px;
@@ -43,13 +43,12 @@ export const FormButton = styled.button`
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    width: 150px;
   }
 `;
 export const ErrorMessage = styled.p`
   font-size: 12px;
   text-align: center;
-  max-width: 250px;
+
   color: red;
   box-shadow: 0 0 10px #ff0000;
   border-radius: 25px;

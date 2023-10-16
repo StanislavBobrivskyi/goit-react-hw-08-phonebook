@@ -6,7 +6,7 @@ function MainSection() {
     <Main>
       <div>
         <Text>WELCOME TO THE PHONEBOOK </Text>
-        <Text>PLEASE REGISTER OR LOG IN</Text>
+        <Text>PLEASE LOG IN OR REGISTER</Text>
       </div>
     </Main>
   );
