@@ -46,11 +46,10 @@ export const FormButton = styled.button`
   }
 `;
 export const ErrorMessage = styled.p`
-  font-size: 12px;
-  text-align: center;
-
   color: red;
-  box-shadow: 0 0 10px #ff0000;
+  font-size: 12px;
+  /* box-shadow: 0 0 10px #ff0000; */
   border-radius: 25px;
   padding: 2px 4px;
+  background-color: #fff;
 `;
