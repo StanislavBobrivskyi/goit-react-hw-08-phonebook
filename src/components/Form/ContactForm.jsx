@@ -50,9 +50,19 @@ export function ContactForm() {
   return (
     <StyledForm onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="name">Name</label>
-      <StyledInput {...register('name')} type="text" id="name" />
+      <StyledInput
+        {...register('name')}
+        type="text"
+        id="name"
+        placeholder="enter the contact name"
+      />
       <label htmlFor="number">Number</label>
-      <StyledInput {...register('number')} type="tel" id="number" />
+      <StyledInput
+        {...register('number')}
+        type="tel"
+        id="number"
+        placeholder="enter the contact number"
+      />
       <FormButton type="submit">Add contact</FormButton>
     </StyledForm>
   );
