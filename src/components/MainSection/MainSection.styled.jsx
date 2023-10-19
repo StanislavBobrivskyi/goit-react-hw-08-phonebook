@@ -14,3 +14,10 @@ export const Text = styled.p`
   font-size: 24px;
   font-weight: 700;
 `;
+
+export const Text2 = styled.p`
+  color: rgb(41, 90, 2);
+  padding: 15px;
+  font-size: 24px;
+  font-weight: 700;
+`;
