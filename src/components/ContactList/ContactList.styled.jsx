@@ -27,7 +27,7 @@ export const ContactName = styled.p`
 
 export const DeleteButton = styled.button`
   padding: 6px;
-  width: 80%;
+  width: 100px;
   height: 100%;
   flex-shrink: 0;
   border-radius: 33.5px;
