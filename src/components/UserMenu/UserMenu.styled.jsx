@@ -51,4 +51,5 @@ export const UserName = styled.span`
   color: #f6ab13;
   font-style: italic;
   font-size: 22px;
+  text-transform: uppercase;
 `;
